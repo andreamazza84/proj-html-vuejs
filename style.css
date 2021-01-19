@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    min-width: 769px;
+    font-family: 'Roboto', sans-serif;
+}
+/*  Utility */
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+}
+/*  /Utility */
+/* Header */
+#header > #header-top{
+    height: 35px;
+    background-color: #0088cc;
+    color: white;
+}
+#header > #header-middle{
+    height: 80px;
+    background-color: white;
+}
+#header > #header-bottom{
+    height: 40px;
+    background-color: white;
+}
+
+
