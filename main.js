@@ -1,6 +1,8 @@
-//Primo step: suddivisione sommaria delle aree del sito.
-//Secondo step: individuare le parti che si possono ripetere e implementarle con Vue
-//Terzo step: inserire transizioni/animazioni
+// - suddivisione sommaria delle aree del sito.
+// - individuare le parti che si possono ripetere e implementarle con Vue
+// - iniziare l'inserimento dei singoli elementi che si ripetono
+// - individuare elementi che possono essere rimpiazzati da componenti 
+// - inserire transizioni/animazioni
 
 Vue.component('button-counter', {
     data: function(){
