@@ -15,19 +15,46 @@ section{
     width: 100%;
 }
 /*  /Utility */
-/* Header */
+
+/* Structure */
+    /* Header */
 #header > #header-top{
-    height: 35px;
+    min-height: 40px;
     background-color: #0088cc;
     color: white;
 }
 #header > #header-middle{
-    height: 80px;
+    min-height: 80px;
     background-color: white;
 }
 #header > #header-bottom{
-    height: 40px;
+    min-height: 40px;
     background-color: white;
 }
-
-
+    /* /Header */
+    /* Main */
+#main > #main-top{
+    min-height: 430px;
+    background-color: #f7f7f7;
+}
+#main > #main-middle{
+    min-height: 370px;
+    background-color: #f7f7f7;
+}
+#main > #main-scrollbar{
+    min-height: 100px;
+    background-color: #0088cc;
+}
+#main > #main-bottom{
+    min-height: 900px;
+    background-color: #f7f7f7;
+}
+#footer > #footer-top{
+    min-height: 270px;
+    background-color: #212529;
+}
+#footer > #footer-bottom{
+    min-height: 70px;
+    background-color: #1c2023;
+}
+/* /Structure */
