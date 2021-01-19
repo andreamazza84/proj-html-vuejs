@@ -4,20 +4,17 @@
 // - individuare elementi che possono essere rimpiazzati da componenti 
 // - inserire transizioni/animazioni
 
-Vue.component('button-counter', {
-    data: function(){
-        return {
-            count: 0
-        }
-    },
-    template: '<button v-on:click="count++">Cliccato {{count}} volte</button>'
-})
+
+//Navbar
+// Vue.component('navbar', {
+//     template: '<div>123</div>',
+// });
 
 
 let app = new Vue({
     el: '#root',
     data: {
-
+        topMenu: ['sign in', 'about us', 'contact us', 'buy now'],
     },
     methods: {
 
