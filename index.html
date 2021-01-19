@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- 12Bool - stylesheet -->
-    <link rel="stylesheet" href="12-bool-responsive.css">
+    <!-- <link rel="stylesheet" href="12-bool-responsive.css"> -->
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>Blog</title>
@@ -26,15 +26,25 @@
                     <div class="container f-align">
                         <div class="jingle f-align">Everything about Lifestyle, Travel and Gadgets</div>
                         <ul class="menu f-align">
-                            <li v-for="item in topMenu"><a href="#">{{item}}</a></li>
+                            <li v-for="item in headerTopMenu"><a href="#">{{item}}</a></li>
                         </ul>
                     </div>
                     <!-- /.container -->
                 </section>
                 <!-- /#header-top -->
-                <section id="header-middle"></section>
+                <section id="header-middle">
+                    <div class="container">
+                        <a class="logo f-align" href="#"><img src="blog/img/logo-default-slim.png" alt="porto logo"></a>
+                    </div>
+                </section>
                 <!-- /#header-middle -->
-                <section id="header-bottom"></section>
+                <section id="header-bottom">
+                    <div class="container">
+                        <ul class="menu f-align">
+                            <li v-for="item in headerBottomMenu"><a href="#">{{item}}</a></li>
+                        </ul>
+                    </div>
+                </section>
                 <!-- /#header-bottom -->
             </header>
             <!-- /#header -->

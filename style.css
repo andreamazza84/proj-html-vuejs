@@ -6,8 +6,10 @@
 body{
     min-width: 769px;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
-/*  Utility */
+/***  Utility ***/
+a,
 ul li a{
     text-decoration: none;
     color: white;
@@ -15,31 +17,36 @@ ul li a{
 section{
     width: 100%;
 }
+.container{
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .f-align{
     display: flex;
     align-content: center;
     align-items: center;
 }
-/*  /Utility */
+/***  /Utility ***/
 
-/* Structure */
-    /* Header */
+/*** Structure ***/
+    /*** Header ***/
 #header > #header-top{
     height: 60px;
     background-color: #0088cc;
     color: white;
-    font-size: 16px;
 }
 #header > #header-middle{
-    min-height: 80px;
+    height: 100px;
     background-color: white;
+    border-bottom: 1px solid #f7f7f7;
 }
 #header > #header-bottom{
-    min-height: 40px;
+    height: 60px;
     background-color: white;
 }
-    /* /Header */
-    /* Main */
+    /*** /Header ***/
+    /*** Main ***/
 #main > #main-top{
     min-height: 430px;
     background-color: #f7f7f7;
@@ -64,8 +71,8 @@ section{
     min-height: 70px;
     background-color: #1c2023;
 }
-/* /Structure */
-/* Header-top */
+/*** /Structure ***/
+/*** Header-top ***/
 #header-top .container{
     display: flex;
     justify-content: flex-start;
@@ -74,14 +81,32 @@ section{
 }
 #header-top .jingle{
     height: 100%;
-    margin-right: 10px;
+    margin-right: 25px;
 }
-#header-top ul.menu{
+#header ul.menu{
     height: 100%;
 }
-#header-top ul.menu li{
+#header ul.menu li{
     list-style: none;
-    margin: 0 10px;
+    margin-right: 25px;
     text-transform: uppercase;
 }
-/* /Header-top */
+/*** /Header-top ***/
+/*** Header-middle ***/
+#header-middle .logo{
+    height: 100%;
+}
+#header-middle .logo > img{
+    height: 50px;
+}
+/*** /Header-middle ***/
+#header-bottom ul.menu li{
+    margin-right: 40px;
+}
+#header-bottom ul.menu a{
+    color: black;
+    font-weight: 600;
+}
+#header-bottom ul.menu a:hover{
+    color: #0088cc;
+}

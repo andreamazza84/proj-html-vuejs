@@ -14,7 +14,8 @@
 let app = new Vue({
     el: '#root',
     data: {
-        topMenu: ['sign in', 'about us', 'contact us', 'buy now'],
+        headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
+        headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'],
     },
     methods: {
 
