@@ -16,6 +16,13 @@ let app = new Vue({
     data: {
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'],
+        cards:[
+            {
+            tag: 'photografy',
+            title: 'how totake better concert pictures in 30 seconds',
+            imgURL: 'blog/img/blog-49.jpg'
+            },
+        ], 
     },
     methods: {
 

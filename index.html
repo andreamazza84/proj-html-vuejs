@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- 12Bool - stylesheet -->
-    <!-- <link rel="stylesheet" href="12-bool-responsive.css"> -->
+    <link rel="stylesheet" href="12-bool-responsive.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>Blog</title>
@@ -39,17 +39,26 @@
                 </section>
                 <!-- /#header-middle -->
                 <section id="header-bottom">
-                    <div class="container">
+                    <div class="container f-align">
                         <ul class="menu f-align">
                             <li v-for="item in headerBottomMenu"><a href="#">{{item}}</a></li>
                         </ul>
+                        <div class="search"><input type="text"><i class="fas fa-search"></i></div>
                     </div>
                 </section>
                 <!-- /#header-bottom -->
             </header>
             <!-- /#header -->
             <main id="main">
-                <section id="main-top"></section>
+                <section id="main-top">
+                    <div class="container">
+                        <div class="row">                  
+                            <div class="card col-lg-4" v-for="card in cards">
+                                <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- /#section-top -->
                 <section id="main-middle"></section>
                 <!-- /#section-middle -->
