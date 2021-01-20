@@ -192,9 +192,10 @@ section{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+/* Popular and Recent */
 #main-middle .post{
     display: flex;
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #f7f7f7;
 }
 #main-middle .post img{
@@ -209,6 +210,32 @@ section{
     color: #b7b7b7;
     margin-top: 10px;
 }
+/* /Popular and Recent */
+/* Featured post */
+#main-middle .card {
+    padding-bottom: 40px;
+}
 #main-middle .card .card-content{
     height: 200px;
 }
+#main-middle .feat-post{
+    display: flex;
+}
+#main-middle .feat-post img{
+    width: 150px;
+    height: 150px;
+}
+#main-middle .feat-post .content{
+    padding: 15px;
+}
+#main-middle .feat-post .content .author{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#main-middle .feat-post .content .overview{
+    color: #888;
+    line-height: 1.5;
+}
+/* /Featured post */

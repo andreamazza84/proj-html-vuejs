@@ -70,7 +70,7 @@
                 <section id="main-middle">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="col-lg-4 col-md-6 col-sm-12 popular">
                                 <h4>popular posts</h4>
                                 <div class="pop-post post" v-for="post in popularpost">
                                     <img :src="post.imgURL" alt="post img">
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="col-lg-4 col-md-6 col-sm-12 recent">
                                 <h4>recent posts</h4>
                                 <div class="rec-post post" v-for="post in recentpost">
                                     <img :src="post.imgURL" alt="post img">
@@ -90,9 +90,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="col-lg-4 col-md-12 col-sm-12 featured">
                                 <h4>featured posts</h4>
-                                <div class="card" v-for="card in cardpost.slice(0,1)">
+                                <div class="card" v-for="card in featuredpost.slice(0,1)">
                                     <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }" @mouseover="card.visible=true" @mouseleave="card.visible=false">
                                         <div class="filter"></div>
                                         <div class=floating-content>
@@ -103,8 +103,12 @@
                                     </div>
                                 </div>
                                 <h4>featured author</h4>
-                                <div class="feat-post">
-                                    
+                                <div class="feat-post" v-for="post in featAuthorpost.slice(0,1)">
+                                    <img :src="post.author_img" alt="author img">
+                                    <div class="content">
+                                        <div class="author">{{post.author}}</div>
+                                        <div class="overview">{{post.author_overview}}</div>
+                                    </div>
                                 </div>
                             </div>
 

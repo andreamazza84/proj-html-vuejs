@@ -210,7 +210,7 @@ let app = new Vue({
                 date: 'August 8, 2020',
                 author: 'John Doe',
                 author_img: 'blog/img/blog-68.jpg',
-                author_overview: 'lorem ipsum...',
+                author_overview: 'lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius ab iusto odit corrupti, cupiditate animi dolore autem voluptas debitis...',
                 comments: 12,
                 },
             ],
@@ -225,7 +225,13 @@ let app = new Vue({
         },
         recentpost: function(){
             return this.posts.recent;
-        }
+        },
+        featuredpost: function(){
+            return this.posts.featured;
+        },
+        featAuthorpost: function(){
+            return this.posts.featAuthor;
+        },
     },
     methods: {},
     created(){},
