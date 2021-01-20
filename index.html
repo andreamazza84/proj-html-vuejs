@@ -53,9 +53,9 @@
                 <section id="main-top">
                     <div class="container">
                         <div class="row">                  
-                            <div class="card col-lg-4" v-for="card in cards">
-                                <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }">
-                                    <div class="filter" @mouseover="card.visible=true" @mouseleave="card.visible=false"></div>
+                            <div class="card col-lg-4 col-md-6 col-sm-12" v-for="card in cards">
+                                <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }" @mouseover="card.visible=true" @mouseleave="card.visible=false">
+                                    <div class="filter"></div>
                                     <div class=floating-content>
                                         <div class="tag">{{card.tag}}</div>
                                         <div class="title">{{card.title}}</div>
@@ -67,7 +67,35 @@
                     </div>
                 </section>
                 <!-- /#section-top -->
-                <section id="main-middle"></section>
+                <section id="main-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <h4>popular posts</h4>
+                                <div class="pop-post post" v-for="post in popularpost">
+                                    <img :src="post.imgURL" alt="post img">
+                                    <div class="content">
+                                        <div class="title">{{post.title}}</div>
+                                        <div class="date">{{post.date}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <h4>recent posts</h4>
+                                <div class="rec-post post" v-for="post in recentpost">
+                                    <img :src="post.imgURL" alt="post img">
+                                    <div class="content">
+                                        <div class="title">{{post.title}}</div>
+                                        <div class="date">{{post.date}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="feat-post"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- /#section-middle -->
                 <section id="main-scrollbar"></section>
                 <!-- /#main-scrollbar -->
