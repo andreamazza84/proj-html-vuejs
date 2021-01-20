@@ -54,7 +54,14 @@
                     <div class="container">
                         <div class="row">                  
                             <div class="card col-lg-4" v-for="card in cards">
-                                <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }"></div>
+                                <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }">
+                                    <div class="filter" @mouseover="card.visible=true" @mouseleave="card.visible=false"></div>
+                                    <div class=floating-content>
+                                        <div class="tag">{{card.tag}}</div>
+                                        <div class="title">{{card.title}}</div>
+                                        <div v-if="card.visible" class="description">{{card.description}}</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

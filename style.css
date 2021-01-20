@@ -130,10 +130,36 @@ section{
 }
 #main-top .card{
     padding-right: 20px;
+    color: white;
 }
 #main-top .card-content{
+    position: relative;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* #main-top .card-content:after{
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+#main-top .card-content .filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+}
+#main-top .card-content .filter:hover{
+    opacity: 1;
+}
+.floating-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
 }

@@ -17,12 +17,14 @@ let app = new Vue({
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'],
         cards:[
-            {
-            tag: 'photografy',
-            title: 'how totake better concert pictures in 30 seconds',
-            imgURL: 'blog/img/blog-49.jpg'
-            },
-        ], 
+                {
+                tag: 'photografy',
+                title: 'how to take better concert pictures in 30 seconds',
+                imgURL: 'blog/img/blog-49.jpg',
+                description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
+                visible: false,
+                },
+            ], 
     },
     methods: {
 
