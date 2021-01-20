@@ -16,6 +16,8 @@ let app = new Vue({
     data: {
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'], 
+        tagMenu:['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'opera'],
+        tagMenu_n: 0,
         posts: {
             cards: [
                 {
@@ -214,7 +216,8 @@ let app = new Vue({
                 comments: 12,
                 },
             ],
-        },    
+        },
+
     },
     computed: {
         cardpost: function(){
@@ -233,7 +236,24 @@ let app = new Vue({
             return this.posts.featAuthor;
         },
     },
-    methods: {},
+    methods: {
+        prev: function(){
+            if (this.tagMenu_n === 0) {
+                return
+            }
+            else{
+                return this.tagMenu_n--;
+            }
+        },
+        next: function(array){
+            if (this.tagMenu_n + 5 === array.length - 1) {
+                return console.log("ciao");
+            }
+            else{
+                return this.tagMenu_n++;
+            }
+        },
+    },
     created(){},
     mounted(){},
 

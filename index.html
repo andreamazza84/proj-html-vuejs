@@ -116,7 +116,15 @@
                     </div>
                 </section>
                 <!-- /#section-middle -->
-                <section id="main-scrollbar"></section>
+                <section id="main-scrollbar">
+                    <div class="container">
+                        <i class="fas fa-chevron-left" @click="prev()"></i>
+                        <div class="scroll-menu">
+                            <div class="btn-big" v-for="tag in tagMenu.slice(tagMenu_n,tagMenu_n+5)">{{tag}}</div>
+                        </div>
+                        <i class="fas fa-chevron-right" @click="next(tagMenu)"></i>
+                    </div>
+                </section>
                 <!-- /#main-scrollbar -->
                 <section id="main-bottom"></section>
                 <!-- /#section-bottom -->
@@ -136,3 +144,4 @@
     
 </body>
 </html>
+

@@ -55,7 +55,7 @@ section{
     background-color: white;
 }
 #main > #main-scrollbar{
-    min-height: 100px;
+    height: 150px;
     background-color: #0088cc;
 }
 #main > #main-bottom{
@@ -238,4 +238,34 @@ section{
     color: #888;
     line-height: 1.5;
 }
-/* /Featured post */
+    /* /Featured post */
+/* /#main middle */
+/* #main scrollbar */
+#main-scrollbar .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#main-scrollbar .scroll-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+[class*="fa-chevron-"]{
+    cursor: pointer;
+    color: #444;
+    font-size: 22px;
+}
+.btn-big{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #212529;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 30px;
+    text-align: center;
+    line-height: 50px;
+}
