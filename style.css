@@ -124,39 +124,41 @@ section{
     margin-right: 10px;
 }
 /*** /Header ***/
-    /*** Header-top ***/
+/*** Main-top ***/
+
 #main-top .row{
     padding: 30px 0;
 }
-#main-top .card{
+/*** Component - CARD ***/
+ .card{
     padding-right: 20px;
     padding-bottom: 20px;
     color: white;
 }
-#main-top .card-content{
+ .card .card-content{
     position: relative;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main-top .card-content .filter{
+ .card .card-content .filter{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
     opacity: 0.6;
 }
-#main-top .card-content:hover .filter{
+.card .card-content:hover .filter{
     opacity: 1;
 }
-.floating-content{
+.card .card-content .floating-content{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 30px 20px;
 }
-#main-top .tag{
+ .card .card-content .tag{
     display: inline-block;
     width: fit-content;
     font-size: 12px;
@@ -167,18 +169,20 @@ section{
     border-radius: 2px;
     margin-bottom: 5px;
 }
-#main-top .title{
+ .card .card-content .title{
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 5px;
 }
-#main-top .description{
+ .card .card-content .description{
     color: #8d8f91;
     line-height: 1.5;
     font-size: 16px;
     font-weight: 600;
 }
+/*** Component - CARD ***/
+
     /*** /main-top ***/
     /*** main-middle ***/
 #main-middle .row{
@@ -204,4 +208,7 @@ section{
 #main-middle .post .content .date{
     color: #b7b7b7;
     margin-top: 10px;
+}
+#main-middle .card .card-content{
+    height: 200px;
 }

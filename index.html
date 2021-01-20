@@ -53,7 +53,7 @@
                 <section id="main-top">
                     <div class="container">
                         <div class="row">                  
-                            <div class="card col-lg-4 col-md-6 col-sm-12" v-for="card in cards">
+                            <div class="card col-lg-4 col-md-6 col-sm-12" v-for="card in cardpost">
                                 <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }" @mouseover="card.visible=true" @mouseleave="card.visible=false">
                                     <div class="filter"></div>
                                     <div class=floating-content>
@@ -91,8 +91,23 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="feat-post"></div>
+                                <h4>featured posts</h4>
+                                <div class="card" v-for="card in cardpost.slice(0,1)">
+                                    <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }" @mouseover="card.visible=true" @mouseleave="card.visible=false">
+                                        <div class="filter"></div>
+                                        <div class=floating-content>
+                                            <div class="tag">{{card.tag}}</div>
+                                            <div class="title">{{card.title}}</div>
+                                            <div v-if="card.visible" class="description">{{card.description}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>featured author</h4>
+                                <div class="feat-post">
+                                    
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
