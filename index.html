@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <h4>featured author</h4>
-                                <div class="feat-post" v-for="post in featAuthorpost.slice(0,1)">
+                                <div class="feat-post" v-for="post in featuredpost.slice(0,1)">
                                     <img :src="post.author_img" alt="author img">
                                     <div class="content">
                                         <div class="author">{{post.author}}</div>
@@ -131,7 +131,7 @@
                         <div class="row">
                             <main id="articles" class="col-lg-9 col-md-12">
                                 <div class="post" v-for="post in popularpost.slice(0,4)">
-                                    <img :src="post.imgURL" alt="post img">
+                                    <img :src="post.imgURL_wide" alt="post img">
                                     <div class="content">
                                         <div class="date">
                                             <div class="day">{{post.date.day}}</div>
@@ -174,14 +174,14 @@
                 <section id="footer-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 foot about">
+                            <div class="col-lg-4 col-md-6 col-sm-12 foot about">
                                 <h5>about the blog</h5>
                                 <div class="content" v-for="post in about">
                                     <p class="text">{{post}}</p>
                                 </div>
                                 <div class="view-more">view more <i class="fas fa-chevron-right"></i></div>
                             </div>
-                            <div class="col-lg-3 col-md-6 foot posts">
+                            <div class="col-lg-3 col-md-6 col-sm-12 foot posts">
                                 <h5>recent posts</h5>
                                 <div class="post" v-for="post in recentpost.slice(0,2)">
                                     <img :src="post.imgURL" alt="post img">
@@ -191,7 +191,7 @@
                                     </div>
                                 </div>
                             </div>    
-                            <div class="col-lg-3 col-md-6 foot comments">
+                            <div class="col-lg-3 col-md-6 col-sm-12 foot comments">
                                 <h5>recent comments</h5>
                                 <div class="comments" v-for="comments in 2">
                                     <div class="text">
@@ -203,7 +203,7 @@
                                     <div class="date">12.55 AM Dec 19th</div>
                                 </div>
                             </div>    
-                            <div class="col-lg-2 col-md-6 foot categories">
+                            <div class="col-lg-2 col-md-6 col-sm-12 foot categories">
                                 <h5>categories</h5>
                                 <div class="wrap">
                                     <span class="btn-small" v-for="tag in tagContent">
