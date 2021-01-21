@@ -91,7 +91,7 @@ let app = new Vue({
                 {
                 tag: 'photography',
                 title: 'simple ways to have a pretty face',
-                imgURL: 'blog/img/blog-55.jpg',
+                imgURL: 'blog/img/blog-55 (1).jpg',
                 description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
                 visible: false,
                 date: 'January 19, 2020',
@@ -101,7 +101,7 @@ let app = new Vue({
                 {
                 tag: 'photography',
                 title: 'simple ways to have a pretty face',
-                imgURL: 'blog/img/blog-55.jpg',
+                imgURL: 'blog/img/blog-55 (1).jpg',
                 description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
                 visible: false,
                 date: 'January 19, 2020',
@@ -111,7 +111,7 @@ let app = new Vue({
                 {
                 tag: 'photography',
                 title: 'simple ways to have a pretty face',
-                imgURL: 'blog/img/blog-55.jpg',
+                imgURL: 'blog/img/blog-55 (1).jpg',
                 description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
                 visible: false,
                 date: 'January 19, 2020',
@@ -121,7 +121,7 @@ let app = new Vue({
                 {
                 tag: 'photography',
                 title: 'simple ways to have a pretty face',
-                imgURL: 'blog/img/blog-55.jpg',
+                imgURL: 'blog/img/blog-55 (1).jpg',
                 description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
                 visible: false,
                 date: 'January 19, 2020',
@@ -131,7 +131,7 @@ let app = new Vue({
                 {
                 tag: 'photography',
                 title: 'simple ways to have a pretty face',
-                imgURL: 'blog/img/blog-55.jpg',
+                imgURL: 'blog/img/blog-55 (1).jpg',
                 description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat, harum at maiores expedita deleniti?',
                 visible: false,
                 date: 'January 19, 2020',
