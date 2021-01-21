@@ -22,7 +22,6 @@ let app = new Vue({
             end: function() {return this.content.length},
             show: 5,
         },
-        tagMenu: 0,
         posts: {
             cards: [
                 {
@@ -224,6 +223,10 @@ let app = new Vue({
                 },
             ],
         },
+        about:[
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iste et nulla architecto cum magni sed necessitatibus possimus repudiandae tenetur!",
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iste et nulla architecto cum magni sed necessitatibus possimus repudiandae tenetur!",
+        ],
 
     },
     computed: {
