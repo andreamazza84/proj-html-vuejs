@@ -16,8 +16,13 @@ let app = new Vue({
     data: {
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'], 
-        tagMenu:['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'opera'],
-        tagMenu_n: 0,
+        tags:{
+            content: ['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sator', 'arepo', 'tenet', 'opera', 'rotas'],
+            start: 0,
+            end: function() {return this.content.length},
+            show: 5,
+        },
+        tagMenu: 0,
         posts: {
             cards: [
                 {
@@ -235,23 +240,30 @@ let app = new Vue({
         featAuthorpost: function(){
             return this.posts.featAuthor;
         },
+        tagContent: function(){
+            return this.tags.content;
+        }
     },
     methods: {
+        //Avanzamento della scrollbar contenente i tags-button
         prev: function(){
-            if (this.tagMenu_n === 0) {
+            if (this.tags.start === 0) {
                 return
             }
             else{
-                return this.tagMenu_n--;
+                return this.tags.start--;
             }
         },
-        next: function(array){
-            if (this.tagMenu_n + 5 === array.length - 1) {
-                return console.log("ciao");
+        next: function(){
+            if (this.tags.start + this.tags.show === this.tags.end()) {
+                return
             }
             else{
-                return this.tagMenu_n++;
+                return this.tags.start++;
             }
+        },
+        tagsLength: function () {
+            
         },
     },
     created(){},

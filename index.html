@@ -120,9 +120,9 @@
                     <div class="container">
                         <i class="fas fa-chevron-left" @click="prev()"></i>
                         <div class="scroll-menu">
-                            <div class="btn-big" v-for="tag in tagMenu.slice(tagMenu_n,tagMenu_n+5)">{{tag}}</div>
+                            <div class="btn-big" v-for="tag in tagContent.slice(tags.start, tags.start + tags.show)">{{tag}}</div>
                         </div>
-                        <i class="fas fa-chevron-right" @click="next(tagMenu)"></i>
+                        <i class="fas fa-chevron-right" @click="next()"></i>
                     </div>
                 </section>
                 <!-- /#main-scrollbar -->
