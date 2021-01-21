@@ -203,7 +203,14 @@
                                     <div class="date">12.55 AM Dec 19th</div>
                                 </div>
                             </div>    
-                            <div class="col-lg-2 col-md-6 foot categories"></div>    
+                            <div class="col-lg-2 col-md-6 foot categories">
+                                <h5>categories</h5>
+                                <div class="wrap">
+                                    <span class="btn-small" v-for="tag in tagContent">
+                                        {{tag}}
+                                    </span>
+                                </div>
+                            </div>    
 
                         </div>
                     </div>

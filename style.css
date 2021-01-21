@@ -43,6 +43,24 @@ section{
 .btn-big:hover{
     background-color: #32383e;
 }
+.btn-small{
+    height: 30px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn-small:hover{
+    background-color: #212529;
+}
 .btn-white{
     color: #888;
     border: 1px solid #bfbfbf;
@@ -475,3 +493,10 @@ section{
     font-weight: 600;
     color: #f7f7f7;
 }
+/* /recent comments */
+/* categories */
+#footer-top .foot .wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* /categories */
