@@ -126,7 +126,29 @@
                     </div>
                 </section>
                 <!-- /#main-scrollbar -->
-                <section id="main-bottom"></section>
+                <section id="main-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <main id="articles" class="col-lg-9 col-md-12">
+                                <div class="post" v-for="post in popularpost.slice(0,4)">
+                                    <img :src="post.imgURL" alt="post img">
+                                    <div class="content">
+                                        <div class="date">{{post.date}}</div>
+                                        <div class="article">
+                                            <div class="title">{{post.title}}</div>
+                                            <div class="text">{{post.description}}</div>
+                                            <div class="more">
+                                                <div class="tags">{{post.author}}</div>
+                                                <div class="read-more">read more</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    <aside id="social"></aside>
+                </section>
                 <!-- /#section-bottom -->
             </main>
             <!-- /#main -->

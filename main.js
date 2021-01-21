@@ -216,7 +216,7 @@ let app = new Vue({
                 visible: false,
                 date: 'August 8, 2020',
                 author: 'John Doe',
-                author_img: 'blog/img/blog-68.jpg',
+                author_img: 'blog/img/avatar.jpg',
                 author_overview: 'lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius ab iusto odit corrupti, cupiditate animi dolore autem voluptas debitis...',
                 comments: 12,
                 },

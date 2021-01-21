@@ -210,7 +210,7 @@ section{
     color: #b7b7b7;
     margin-top: 10px;
 }
-/* /Popular and Recent */
+/*** /Popular and Recent */
 /* Featured post */
 #main-middle .card {
     padding-bottom: 40px;
@@ -238,9 +238,9 @@ section{
     color: #888;
     line-height: 1.5;
 }
-    /* /Featured post */
-/* /#main middle */
-/* #main scrollbar */
+    /*** /Featured post ***/
+/*** /#main middle ***/
+/*** #main scrollbar ***/
 #main-scrollbar .container{
     display: flex;
     justify-content: center;
@@ -274,3 +274,6 @@ section{
 .btn-big:hover{
     background-color: #32383e;
 }
+    /*** /#main scrollbar ***/
+    /*** /#main-bottom ***/
+        /*** #articles***/
