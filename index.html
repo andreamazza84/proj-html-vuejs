@@ -133,15 +133,33 @@
                                 <div class="post" v-for="post in popularpost.slice(0,4)">
                                     <img :src="post.imgURL" alt="post img">
                                     <div class="content">
-                                        <div class="date">{{post.date}}</div>
+                                        <div class="date">
+                                            <div class="day">{{post.date.day}}</div>
+                                            <div class="month">{{post.date.month}}</div>
+                                        </div>
                                         <div class="article">
                                             <div class="title">{{post.title}}</div>
                                             <div class="text">{{post.description}}</div>
                                             <div class="more">
-                                                <div class="tags">{{post.author}}</div>
+                                                <div class="tags">
+                                                    <i class="far fa-user"></i>
+                                                    <span>by <a href="#">{{post.author}}</a></span>
+                                                    <i class="far fa-folder"></i>
+                                                    <span><a href="#">{{post.tag}}</a></span>
+                                                    <i class="far fa-comments"></i>
+                                                    <span><a href="#">{{post.comments}} comments</a></span>
+
+                                                </div>
                                                 <div class="read-more btn-white">read more</div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="pages">
+                                    <div class="page-selector">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <i v-for="page in 3">{{page}}</i>
+                                        <i class="fas fa-chevron-right"></i>
                                     </div>
                                 </div>
                             </main>
