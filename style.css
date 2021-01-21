@@ -405,6 +405,10 @@ section{
 #footer-top .row{
     padding: 50px 0;
 }
+/* about the blog */
+#footer-top .foot{
+    padding-right: 30px;
+}
 #footer-top .foot h5{
     color: white;
     font-size: 14px;
@@ -416,6 +420,7 @@ section{
     color: #777;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: justify;
 }
 #footer-top .foot .view-more,
 #footer-top .foot .view-more i{
@@ -427,4 +432,46 @@ section{
 }
 #footer-top .foot .view-more i{
     margin-left: 5px;
+}
+/* /about the blog */
+/* recent posts */
+
+#footer-top .foot .post{
+    display: flex;
+    padding-bottom: 20px;
+}
+#footer-top .foot .post img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#footer-top .foot .post .content{
+    padding-left: 10px;
+}
+#footer-top .foot .post .content .text{
+    color: #f7f7f7;
+    font-weight: 400;
+    text-align: justify;
+}
+#footer-top .foot .date{
+    color: #777;
+}
+/* /recent posts */
+/* recent comments */
+#footer-top .foot .comments .text{
+    margin-bottom: 20px;
+}
+#footer-top .foot .comments .text i{
+    color: #0088cc;
+    font-size: 11px;
+    margin-right: 5px;
+}
+#footer-top .foot .comments .text .article{
+    color: #0088cc;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#footer-top .foot .comments .text .author{
+    font-weight: 600;
+    color: #f7f7f7;
 }

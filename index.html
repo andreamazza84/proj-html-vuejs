@@ -181,9 +181,29 @@
                                 </div>
                                 <div class="view-more">view more <i class="fas fa-chevron-right"></i></div>
                             </div>
-                            <div class="col-lg-2 col-md-6 foot posts"></div>    
-                            <div class="col-lg-3 col-md-6 foot comments"></div>    
-                            <div class="col-lg-3 col-md-6 foot categories"></div>    
+                            <div class="col-lg-3 col-md-6 foot posts">
+                                <h5>recent posts</h5>
+                                <div class="post" v-for="post in recentpost.slice(0,2)">
+                                    <img :src="post.imgURL" alt="post img">
+                                    <div class="content">
+                                        <div class="text">{{post.description}}</div>
+                                        <div class="date">{{post.date}}</div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="col-lg-3 col-md-6 foot comments">
+                                <h5>recent comments</h5>
+                                <div class="comments" v-for="comments in 2">
+                                    <div class="text">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <span class="author">John Doe</span>
+                                        commented on
+                                        <span class="article">Lorem ipsum dolor sit amet.</span>
+                                    </div>
+                                    <div class="date">12.55 AM Dec 19th</div>
+                                </div>
+                            </div>    
+                            <div class="col-lg-2 col-md-6 foot categories"></div>    
 
                         </div>
                     </div>
