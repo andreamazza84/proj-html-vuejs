@@ -16,6 +16,7 @@ let app = new Vue({
     data: {
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'], 
+        footerBottomMenu:["FAQ's", "sitemap", "contact us"],
         tags:{
             content: ['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sator', 'arepo', 'tenet', 'opera', 'rotas'],
             start: 0,

@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Google Font - Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!-- Google Font - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- 12Bool - stylesheet -->
@@ -76,7 +79,7 @@
                                     <img :src="post.imgURL" alt="post img">
                                     <div class="content">
                                         <div class="title">{{post.title}}</div>
-                                        <div class="date">{{post.date}}</div>
+                                        <div class="date">{{post.date.month}} {{post.date.day}}, {{post.date.year}}</div>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +89,7 @@
                                     <img :src="post.imgURL" alt="post img">
                                     <div class="content">
                                         <div class="title">{{post.title}}</div>
-                                        <div class="date">{{post.date}}</div>
+                                        <div class="date">{{post.date.month}} {{post.date.day}}, {{post.date.year}}</div>
                                     </div>
                                 </div>
                             </div>
@@ -187,20 +190,20 @@
                                     <img :src="post.imgURL" alt="post img">
                                     <div class="content">
                                         <div class="text">{{post.description}}</div>
-                                        <div class="date">{{post.date}}</div>
+                                        <div class="date">{{post.date.month}} {{post.date.day}}, {{post.date.year}}</div>
                                     </div>
                                 </div>
                             </div>    
                             <div class="col-lg-3 col-md-6 col-sm-12 foot comments">
                                 <h5>recent comments</h5>
-                                <div class="comments" v-for="comments in 2">
+                                <div class="comment" v-for="comments in posts.slice(0,2)">
                                     <div class="text">
                                         <i class="fas fa-chevron-right"></i>
-                                        <span class="author">John Doe</span>
+                                        <span class="author">{{comments.author}}</span>
                                         commented on
-                                        <span class="article">Lorem ipsum dolor sit amet.</span>
+                                        <span class="article">{{comments.title.slice(0,35)}}...</span>
                                     </div>
-                                    <div class="date">12.55 AM Dec 19th</div>
+                                    <div class="date">{{comments.date.month}} {{comments.date.day}}, {{comments.date.year}}</div>
                                 </div>
                             </div>    
                             <div class="col-lg-2 col-md-6 col-sm-12 foot categories">
@@ -216,7 +219,22 @@
                     </div>
                 </section>
                 <!-- /#footer-top -->
-                <section id="footer-bottom"></section>
+                <section id="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 footer-left f-align">
+                                <img class="logo" src="blog/img/logo-footer.png" alt="logo footer">
+                                <div class="credits">&copy; copyright 2020. all rights reserved.</div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 footer-right f-align">
+                                <span class="list" v-for="item in footerBottomMenu">
+                                    <i class="fas fa-chevron-right"></i>
+                                    {{item}}
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
                 <!-- /#footer-bottom -->
             </footer>
             <!-- /#footer -->

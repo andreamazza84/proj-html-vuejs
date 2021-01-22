@@ -5,7 +5,7 @@
 }
 body{
     min-width: 750px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 /***  Utility ***/
@@ -45,7 +45,7 @@ section{
 }
 .btn-small{
     height: 30px;
-    padding: 5px;
+    padding: 5px 10px;
     color: white;
     background-color: black;
     text-transform: uppercase;
@@ -114,8 +114,11 @@ section{
     background-color: #212529;
 }
 #footer > #footer-bottom{
-    min-height: 70px;
+    height: 100px;
     background-color: #1c2023;
+}
+.row{
+    height: 100%;
 }
 /*** /Structure ***/
 /*** Header-top ***/
@@ -162,7 +165,10 @@ section{
 #header-bottom ul.menu a:hover{
     color: #0088cc;
 }
-#header-bottom input{
+#header-bottom .search i.fa-search{
+    margin-right: 20px;
+}
+#header-bottom .search input{
     border: 0;
     border-right: 1px solid  #f7f7f7;;
     font-size: 16px;
@@ -425,7 +431,10 @@ section{
 }
 /* about the blog */
 #footer-top .foot{
-    padding-right: 30px;
+    padding-right: 50px;
+}
+#footer-top .categories{
+    padding-right: 0;
 }
 #footer-top .foot h5{
     color: white;
@@ -476,20 +485,23 @@ section{
 }
 /* /recent posts */
 /* recent comments */
-#footer-top .foot .comments .text{
+#footer-top .foot .comment{
+    padding-bottom: 25px;
+}
+#footer-top .foot .comment .text{
     margin-bottom: 20px;
 }
-#footer-top .foot .comments .text i{
+#footer-top .foot .comment .text i{
     color: #0088cc;
     font-size: 11px;
     margin-right: 5px;
 }
-#footer-top .foot .comments .text .article{
+#footer-top .foot .comment .text .article{
     color: #0088cc;
     font-weight: 500;
     line-height: 1.5;
 }
-#footer-top .foot .comments .text .author{
+#footer-top .foot .comment .text .author{
     font-weight: 600;
     color: #f7f7f7;
 }
@@ -499,4 +511,31 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-/* /categories */
+    /* /categories */
+/*** /#footer-top ***/
+/*** #footer-bottom ***/
+#footer-bottom{
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    text-transform: capitalize;
+}
+#footer-bottom .footer-left,
+#footer-bottom .footer-right{
+    height: 100%;
+}
+#footer-bottom .footer-left img.logo{
+    height: 35px;
+    margin-right: 10%;
+}
+#footer-bottom .footer-right{
+    justify-content: flex-end;
+}
+#footer-bottom .footer-right .list{
+    margin-left: 20px;
+}
+#footer-bottom .footer-right .list i{
+    margin-right: 10px;
+    font-size: 12px;
+} 
+
