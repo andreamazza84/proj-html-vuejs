@@ -17,6 +17,16 @@ let app = new Vue({
         headerTopMenu: ['sign in', 'about us', 'contact us', 'buy now'],
         headerBottomMenu: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop'], 
         footerBottomMenu:["FAQ's", "sitemap", "contact us"],
+        socials: [
+            {
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            },
+            {
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            },
+        ],
         tags:{
             content: ['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sator', 'arepo', 'tenet', 'opera', 'rotas'],
             start: 0,

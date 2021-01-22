@@ -120,6 +120,12 @@ section{
 .row{
     height: 100%;
 }
+h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: black;
+    font-stretch: condensed;
+}
 /*** /Structure ***/
 /*** Header-top ***/
 #header-top .container{
@@ -240,10 +246,6 @@ section{
     /*** main-middle ***/
 #main-middle .row{
     padding: 40px 0;
-}
-#main-middle .row h4{
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
 /* Popular and Recent */
 #main-middle .post{
@@ -394,6 +396,7 @@ section{
     text-transform: capitalize;
     font-size: 12px;
 }
+/*** page selector ***/
 .pages{
     display: flex;
     width: 100%;
@@ -420,7 +423,32 @@ section{
     background-color: #0088cc;
     color: white;
 }
+            /*** /page selector ***/
         /*** /#articles***/
+        /*** aside ***/
+#socials .social .post{
+    display: flex;
+    padding-bottom: 20px;
+}
+#socials .social .post i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+#socials .social .content{
+    display: block;
+    padding: 0;
+} 
+#socials .social .content .text{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+#socials .social .content .date{
+    color: #0088cc;
+    width: auto;
+    height: auto;
+}
+
+        /*** /aside ***/
     /*** /#main-bottom ***/
 /*** #/main ***/
 
@@ -532,10 +560,16 @@ section{
     justify-content: flex-end;
 }
 #footer-bottom .footer-right .list{
-    margin-left: 20px;
+    width: max-content;
+    margin-left: 2%;
+    cursor: pointer;
 }
 #footer-bottom .footer-right .list i{
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 12px;
-} 
+}
+    /*** #footer-bottom ***/
+/*** #footer ***/
+
+
 

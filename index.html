@@ -132,7 +132,7 @@
                 <section id="main-bottom">
                     <div class="container">
                         <div class="row">
-                            <main id="articles" class="col-lg-9 col-md-12">
+                            <main id="articles" class="col-lg-9 col-md-8 col-sm-12">
                                 <div class="post" v-for="post in popularpost.slice(0,4)">
                                     <img :src="post.imgURL_wide" alt="post img">
                                     <div class="content">
@@ -166,9 +166,23 @@
                                     </div>
                                 </div>
                             </main>
+                            <aside id="socials">
+                                <div class="col-sm-12 col-lg-3 col-md-4">
+                                    <div class="social">
+                                        <h4>latest from twitter</h4>
+                                        <div class="post" v-for="social in socials">
+                                            <i class="fab fa-twitter"></i>
+                                            <div class="content">
+                                                <div class="text">{{social.comment}}</div>
+                                                <div class="date">{{social.date.hour}}:{{social.date.minute}} {{social.date.month}} {{social.date.day}} th</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
                         </div>
                     </div>
-                    <aside id="social"></aside>
                 </section>
                 <!-- /#section-bottom -->
             </main>
@@ -227,10 +241,10 @@
                                 <div class="credits">&copy; copyright 2020. all rights reserved.</div>
                             </div>
                             <div class="col-lg-6 col-sm-12 footer-right f-align">
-                                <span class="list" v-for="item in footerBottomMenu">
+                                <div class="list" v-for="item in footerBottomMenu">
                                     <i class="fas fa-chevron-right"></i>
                                     {{item}}
-                                </span>
+                                </div>
                             </div>
                         </div>  
                     </div>
