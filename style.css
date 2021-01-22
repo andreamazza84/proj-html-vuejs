@@ -5,6 +5,7 @@
 }
 body{
     min-width: 750px;
+    max-width: 1920px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
@@ -51,6 +52,7 @@ section{
     background-color: #32383e;
 }
 .btn-small{
+    width: max-content;
     height: 30px;
     padding: 5px 10px;
     color: white;
@@ -69,12 +71,14 @@ section{
     background-color: #212529;
 }
 .btn-white{
+    height: 30px;
     color: #888;
     border: 1px solid #bfbfbf;
     border-bottom-color: #333;
     border-radius: 5px;
     padding: 6px;
     font-size: 11px;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -127,8 +131,7 @@ section{
     background-color: #212529;
 }
 #footer > #footer-bottom{
-    min-height: 100px;
-    height: 120px;
+    min-height: 120px;
     background-color: #1c2023;
 }
 .row{
@@ -150,14 +153,16 @@ h4{
 }
 #header-top .jingle{
     height: 100%;
-    margin-right: 25px;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 2vw;
 }
 #header ul.menu{
     height: 100%;
 }
 #header ul.menu li{
     list-style: none;
-    margin-right: 25px;
+    margin-right: 1vw;
     text-transform: uppercase;
 }
 /*** /Header-top ***/
@@ -176,7 +181,7 @@ h4{
     justify-content: space-between;
 }
 #header-bottom ul.menu li{
-    margin-right: 40px;
+    margin-right: 1vw;
 }
 #header-bottom ul.menu a{
     font-weight: 600;
@@ -192,8 +197,8 @@ h4{
     border: 0;
     border-right: 1px solid  #f7f7f7;;
     font-size: 16px;
-    height: 25px;
-    width: 200px;
+    width: 10vw;
+    padding: 4px 5px;
     margin-right: 10px;
 }
 /*** /Header ***/
@@ -343,7 +348,7 @@ hr{
     padding: 60px 0;
 }
 #main-bottom .row #articles{
-    padding-right: 30px; 
+    padding-right: 30px;
 }
 #main-bottom .post > img{
     width: 100%;
@@ -379,15 +384,18 @@ hr{
 }
 #main-bottom .article .more .tags{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-basis: auto;
     color: #888;
+    margin-bottom: 20px;
 }
-#main-bottom .article .more .tags span,
-#main-bottom .article .more .tags i{
+#main-bottom .article .more .tags > div{
     margin-right: 10px;
 }
+#main-bottom .article .more .tags i{
+    margin-right: 5px;
+}
 #main-bottom .article .more .tags a{
-    text-decoration: none;
     color: #0088cc
 }
 #main-bottom .date{
@@ -460,7 +468,7 @@ hr{
 #socials .social .content{
     display: block;
     padding: 0;
-} 
+}
 #socials .social .content .text{
     line-height: 1.5;
     margin-bottom: 10px;
@@ -509,8 +517,8 @@ hr{
 
 /*** #footer ***/
     /*** #footer-top***/
-#footer-top .row{
-    padding: 50px 0;
+#footer-top{
+    padding: 80px 0;
 }
 /* about the blog */
 #footer-top .foot{
@@ -596,6 +604,26 @@ hr{
     flex-wrap: wrap;
 }
     /* /categories */
+    /***get-in-touch***/
+#get-in-touch{
+    width: max-content;
+    top: -20px;
+    left: 10%;
+    color: white;
+    background-color: #0088cc;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Shadows Into Light', cursive;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    top: -20px;
+    left: calc(10% - 20px);
+    border-bottom: 20px solid #005580;
+    border-left: 20px solid transparent;
+  }
 /*** /#footer-top ***/
 /*** #footer-bottom ***/
 #footer-bottom{
@@ -607,6 +635,7 @@ hr{
 #footer-bottom .footer-left,
 #footer-bottom .footer-right{
     height: 100%;
+    padding: 4% 0;
 }
 #footer-bottom .footer-left img.logo{
     height: 35px;
@@ -617,6 +646,7 @@ hr{
 }
 #footer-bottom .footer-right .list{
     width: max-content;
+    height: 35px;
     margin-left: 2%;
     cursor: pointer;
 }
