@@ -28,14 +28,21 @@ section{
     align-items: center;
 }
 .btn-big{
-    width: 200px;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: max-content;
+    max-height: 50px;
+    min-height: 25px;
+    width: 100vw;
+    height: 100vw;
     color: white;
     background-color: #212529;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    margin: 0 30px;
+    margin: 0 1%;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
@@ -73,6 +80,12 @@ section{
 }
 .btn-white:hover{
     background-color: #f7f7f7;
+}
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
 }
 /***  /Utility ***/
 
@@ -446,6 +459,38 @@ h4{
     color: #0088cc;
     width: auto;
     height: auto;
+}
+#socials .social .instagram{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+#socials .social .instagram > img{
+    display: block;
+    width: calc(100% / 3);
+}
+#socials .social .wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+#socials .social .tag{
+    border-radius: 15px;
+}
+#socials .social.ratio{
+    margin-top: -95%;
+}
+#socials .social.last{
+    margin-top: 20%;
+}
+#socials .social.last .themes{
+    height: 40px;
+    border-left: 4px solid #f7f7f7;
+    color: #0088cc;
+    text-transform: capitalize;
+    padding-left: 20px;
+
 }
 
         /*** /aside ***/

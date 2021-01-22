@@ -19,13 +19,43 @@ let app = new Vue({
         footerBottomMenu:["FAQ's", "sitemap", "contact us"],
         socials: [
             {
+            tag:'design',
             comment: 'If you have any suggestion for the next updates, let up know.',
             date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/29739607_2020680068220520_4509928046932787200_n.jpg',
             },
             {
+            tag:'brands',
             comment: 'If you have any suggestion for the next updates, let up know.',
             date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/30087804_253872848488989_8792603541668626432_n.jpg',
             },
+            {
+            tag:'video',
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/29415620_196477127626244_3250318472361541632_n.jpg',
+            },
+            {
+            tag:'business',
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/30078414_1274410412703843_8290935809419247616_n.jpg',
+            },
+            {
+            tag:'travel',
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/30077195_2066750973610181_3733150062893596672_n.jpg',
+            },
+            {
+            tag:'shopping',
+            comment: 'If you have any suggestion for the next updates, let up know.',
+            date: {hour: 12, minute: 34, day: 19, month :'Jan', year: 2020},
+            photos: 'blog/img/29415304_166583630713703_1032667922171953152_n.jpg',
+            },
+            
+            
         ],
         tags:{
             content: ['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sator', 'arepo', 'tenet', 'opera', 'rotas'],
@@ -312,7 +342,6 @@ let app = new Vue({
                 },  
         ],
 
-     
         about:[
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iste et nulla architecto cum magni sed necessitatibus possimus repudiandae tenetur!",
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iste et nulla architecto cum magni sed necessitatibus possimus repudiandae tenetur!",

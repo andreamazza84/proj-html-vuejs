@@ -166,22 +166,38 @@
                                     </div>
                                 </div>
                             </main>
-                            <aside id="socials">
-                                <div class="col-sm-12 col-lg-3 col-md-4">
-                                    <div class="social">
-                                        <h4>latest from twitter</h4>
-                                        <div class="post" v-for="social in socials">
-                                            <i class="fab fa-twitter"></i>
-                                            <div class="content">
-                                                <div class="text">{{social.comment}}</div>
-                                                <div class="date">{{social.date.hour}}:{{social.date.minute}} {{social.date.month}} {{social.date.day}} th</div>
-                                            </div>
-
+                            <aside id="socials" class="col-sm-12 col-lg-3 col-md-4">
+                                <div class="social">
+                                    <h4>latest from twitter</h4>
+                                    <div class="post" v-for="social in socials">
+                                        <i class="fab fa-twitter"></i>
+                                        <div class="content">
+                                            <div class="text">{{social.comment}}</div>
+                                            <div class="date">{{social.date.hour}}:{{social.date.minute}} {{social.date.month}} {{social.date.day}}th</div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="social">
+                                    <h4>photos from instagram</h4>
+                                    <div class="instagram">
+                                        <img v-for="social in socials" :src="social.photos" alt="pictures from instagram">
+                                    </div>
+                                </div>
+                                <div class="social ratio">
+                                    <h4>tags</h4>
+                                    <div class="wrap">
+                                        <div class="tag btn-small" v-for="social in socials">
+                                            {{social.tag}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social last">
+                                    <h4>find us on facebook</h4>
+                                    <div class="themes f-align">okler themes</div>
+                                </div>
                             </aside>
                         </div>
+                        
                     </div>
                 </section>
                 <!-- /#section-bottom -->
@@ -252,8 +268,8 @@
                 <!-- /#footer-bottom -->
             </footer>
             <!-- /#footer -->
+        </div>
 
-    </div>
     <!-- VueJs - Script -->
     <script src="main.js"></script>
     
