@@ -58,7 +58,9 @@
                         <div class="row">                  
                             <div class="card col-lg-4 col-md-6 col-sm-12" v-for="card in cardpost">
                                 <div class="card-content" :style="{ 'background-image': 'url(' + card.imgURL + ')' }" @mouseover="card.visible=true" @mouseleave="card.visible=false">
-                                    <div class="filter"></div>
+                                    <div class="filter">
+                                        <!-- leave it void -->
+                                    </div>
                                     <div class=floating-content>
                                         <div class="tag">{{card.tag}}</div>
                                         <div class="title">{{card.title}}</div>
@@ -80,6 +82,7 @@
                                     <div class="content">
                                         <div class="title">{{post.title}}</div>
                                         <div class="date">{{post.date.month}} {{post.date.day}}, {{post.date.year}}</div>
+                                        <hr>
                                     </div>
                                 </div>
                             </div>
@@ -90,6 +93,7 @@
                                     <div class="content">
                                         <div class="title">{{post.title}}</div>
                                         <div class="date">{{post.date.month}} {{post.date.day}}, {{post.date.year}}</div>
+                                        <hr>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +127,7 @@
                     <div class="container">
                         <i class="fas fa-chevron-left" @click="prev()"></i>
                         <div class="scroll-menu">
-                            <div class="btn-big" v-for="tag in tagContent.slice(tags.start, tags.start + tags.show)">{{tag}}</div>
+                            <div class="btn-big" v-for="tag in tagContent.slice(tags.start, tags.start + tags.show)" @click="postFilter(tag)">{{tag}}</div>
                         </div>
                         <i class="fas fa-chevron-right" @click="next()"></i>
                     </div>
@@ -133,7 +137,7 @@
                     <div class="container">
                         <div class="row">
                             <main id="articles" class="col-lg-9 col-md-8 col-sm-12">
-                                <div class="post" v-for="post in wideposts">
+                                <div class="post" v-for="post in filterPosts">
                                     <img :src="post.imgURL_wide" alt="post img">
                                     <div class="content">
                                         <div class="date">

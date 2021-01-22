@@ -58,11 +58,12 @@ let app = new Vue({
             
         ],
         tags:{
-            content: ['lorem', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sator', 'arepo', 'tenet', 'opera', 'rotas'],
+            content: ['all', 'gadgets', 'photography', 'lifestyle', 'fashion', 'recipies', 'travel', 'sport', 'living', 'tech'],
             start: 0,
             end: function() {return this.content.length},
             show: 5,
         },
+        filterPosts: [],
         posts: [
             {   //evidence
                 tag: 'photography',
@@ -396,11 +397,22 @@ let app = new Vue({
                 return this.tags.start++;
             }
         },
-        tagsLength: function () {
-            
+        postFilter: function (tag) {
+            const wideposts = this.wideposts;
+            this.filterPosts = wideposts;
+            this.filterPosts = wideposts.filter(element =>{
+                if(tag === 'all'){
+                    return element;
+                }
+                else{
+                    return element.tag === tag; 
+                }
+            });
         },
     },
     created(){},
-    mounted(){},
+    mounted(){
+        this.postFilter('all');
+    },
 
 });
